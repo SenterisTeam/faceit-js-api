@@ -2,9 +2,9 @@
   "name": "faceit-js-api",
   "version": "0.1.0",
   "description": "JS API for FaceIt",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "node src/test.js"
+    "test": "node lib/test.js"
   },
   "keywords": [
     "Faceit", "API"],
