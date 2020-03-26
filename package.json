@@ -1,0 +1,23 @@
+{
+  "name": "faceit-js-api",
+  "version": "0.1.0",
+  "description": "JS API for FaceIt",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/test.js"
+  },
+  "keywords": [
+    "Faceit", "API"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Neisvestney/faceit-js-api.git"
+  },
+  "author": "Neisvestney",
+  "license": "MIT",
+  "devDependencies": {
+    "request": "^2.88.2"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
