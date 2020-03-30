@@ -1,12 +1,12 @@
 # FaceIT JS API
-JS API for FaceIt
+JS API for FaceIt (OAT)
 ## Install
 `npm install faceit-js-api`
 ## Documentation
 ### Setup
 ```
-const FaceIt = require("faceit-js-api");
-const faceIt = new FaceIt("API KEY");
+const Faceit = require("faceit-js-api");
+const faceit = new Faceit("API KEY");
 ```
 To test performance:
 ```
@@ -25,11 +25,11 @@ Main class for performing requests
 ###### Vars
 | Var           | Type   | description                 |
 |---------------|--------|-----------------------------|
-| faceIt        | FaceIT | Link to main class          |
+| faceit        | FaceIT | Link to main class          |
 | nickname      | string |                             |
 | id            | string |                             |
 | avatar        | string | Url to avatar               |
-| steamId       | string |                             |
+| steamID       | string |                             |
 | steamNickname | string |                             |
 | faceitUrl     | string | Url to faceit profile       |
 | raw           | object | All data getted from feceit |
@@ -45,8 +45,8 @@ Main class for performing requests
 | Var             | Type   | description |
 |-----------------|--------|-------------|
 | games           | Games  |             |
-| gameProfileId   | string |             |
-| gamePlayerId    | string |             |
+| gameProfileID   | string |             |
+| gamePlayerID    | string |             |
 | region          | string |             |
 | skillLevelLabel | string |             |
 | skillLevel      | int    |             |
@@ -70,5 +70,5 @@ Main class for performing requests
 | averageHeadshots | string   |             |
 | matches          | string   |             |
 | totalHeadshots   | string   |             |
-| kdratio          | string   |             |
-| averageKDratio   | string   |             |
+| kdRatio          | string   |             |
+| averageKDRatio   | string   |             |
