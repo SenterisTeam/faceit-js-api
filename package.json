@@ -1,6 +1,6 @@
 {
   "name": "faceit-js-api",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "JS API for Faceit",
   "main": "lib/index.js",
   "scripts": {
