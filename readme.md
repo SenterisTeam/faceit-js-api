@@ -36,10 +36,12 @@ Main class for performing requests
 | games         | Games  | Class with games            |
 #### Games
 ###### Vars
-| Var    | Type   | description                        |
-|--------|--------|------------------------------------|
-| player | Player |                                    |
-| csgo   | CSGO   | Undefined if player dont play csgo |
+| Var    | Type   | description                                   |
+|--------|--------|-----------------------------------------------|
+| player | Player |                                               |
+| csgo   | CSGO   | Undefined if player has not ever play CS:GO   |
+| dota2  | Dota2  | Undefined if player has not ever play Dota 2  |
+| wot_RU | WOT_RU | Undefined if player has not ever play WOT(ru) |
 #### CSGO
 ###### Vars
 | Var             | Type   | description |
@@ -61,7 +63,7 @@ Main class for performing requests
 | Var              | Type     | description |
 |------------------|----------|-------------|
 | csgo             | CSGO     |             |
-| raw              | object   |             |
+| raw              | Object   |             |
 | winRate          | string   |             |
 | currentWinStreak | string   |             |
 | longestWinStreak | string   |             |
@@ -72,3 +74,77 @@ Main class for performing requests
 | totalHeadshots   | string   |             |
 | kdRatio          | string   |             |
 | averageKDRatio   | string   |             |
+#### Dota2
+###### Vars
+| Var             | Type     | description |
+|-----------------|----------|-------------|
+| games           | Games    |             |
+| gameProfileID   | string   |             |
+| region          | string   |             |
+| regions         | Object[] |             |
+| skillLevelLabel | string   |             |
+| gamePlayerID    | string   |             |
+| skillLevel      | int      |             |
+| faceitElo       | int      |             |
+| gamePlayerName  | string   |             |
+###### Methods  
+| Method        | Params           | Return     |
+|---------------|------------------|------------|
+| getStats      |                  | Dota2Stats |
+#### Dota2Stats
+###### Vars
+| Var              | Type     | description |
+|------------------|----------|-------------|
+| dota2            | Dota2    |             |
+| raw              | Object   |             |
+| currentWinStreak | string   |             |
+| goldMinute       | string   |             |
+| averageKDRatio   | string   |             |
+| winRate          | string   |             |
+| matches          | string   |             |
+| averageGoldMinute| string   |             |
+| result           | string   |             |
+| recentResults    | string[] |             |
+| kdRatio          | string   |             |
+| longestWinStreak | string   |             |
+#### WOT_RU
+###### Vars
+| Var             | Type     | description |
+|-----------------|----------|-------------|
+| games           | Games    |             |
+| gameProfileID   | string   |             |
+| region          | string   |             |
+| regions         | Object[] |             |
+| skillLevelLabel | string   |             |
+| gamePlayerID    | string   |             |
+| skillLevel      | int      |             |
+| faceitElo       | int      |             |
+| gamePlayerName  | string   |             |
+###### Methods  
+| Method        | Params           | Return      |
+|---------------|------------------|-------------|
+| getStats      |                  | WOT_RUStats |
+#### WOT_RUStats
+###### Vars
+| Var                   | Type     | description |
+|-----------------------|----------|-------------|
+| wot_RU                | Dota2    |             |
+| raw                   | Object   |             |
+| averageDamageReceived | string   |             |
+| totalDamageReceived   | string   |             |
+| totalHitRatio         | string   |             |
+| win                   | string   |             |
+| totalSurvived         | string   |             |
+| totalDamageDealt      | string   |             |
+| averageSurvived       | string   |             |
+| currentWinningStreak  | string   |             |
+| averageHitRatio       | string   |             |
+| recentResults         | string[] |             |
+| longestWinStreak      | string   |             |
+| totalDamageRatio      | string   |             |
+| averageKills          | string   |             |
+| averageDamageRatio    | string   |             |
+| averageDamageDealt    | string   |             |
+| winRate               | string   |             |
+| matches               | string   |             |
+| totalKills            | string   |             |
