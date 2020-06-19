@@ -1,5 +1,5 @@
 # FaceIT JS API
-JS API for FaceIt (OAT)
+JS API for Faceit (OAT)
 ## Install
 `npm install faceit-js-api`
 ## Documentation
@@ -10,12 +10,12 @@ const faceit = new Faceit("API KEY");
 ```
 To test performance:
 ```
-faceIt.getPlayerInfo("Player name").then(function (player) {
+faceit.getPlayerInfo("Player name").then(function (player) {
     console.log(player);
 });
 ```
 ### Classes
-#### FaceIt
+#### Faceit
 Main class for performing requests
 ###### Methods  
 | Method        | Params           | Return |
@@ -25,7 +25,7 @@ Main class for performing requests
 ###### Vars
 | Var           | Type   | Description                 |
 |---------------|--------|-----------------------------|
-| faceit        | FaceIT | Link to main class          |
+| faceit        | Faceit | Link to main class          |
 | nickname      | string |                             |
 | id            | string |                             |
 | avatar        | string | Url to avatar               |
