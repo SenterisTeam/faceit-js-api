@@ -3,6 +3,7 @@
   "version": "0.3.3",
   "description": "JS API for Faceit",
   "main": "lib/index.js",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
     "test": "node lib/test.js"
   },
