@@ -1,6 +1,8 @@
-# FaceIT JS API
+# Faceit JS API
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/Senteris/faceit-js-api) ![NPM](https://img.shields.io/npm/l/faceit-js-api) ![npm](https://img.shields.io/npm/dt/faceit-js-api)  
-JS API for Faceit (OAT)
+A small JS API for Faceit 
+
+(If you read it on npmjs.com - Read this file on github! Npmjs.com sometimes does not see difference between face**I**t and face**i**t)
 ## Install
 `npm install faceit-js-api`
 ## Documentation
